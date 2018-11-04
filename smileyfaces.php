@@ -1,9 +1,14 @@
 <?php
 
-function count_smileys($arr): int {
+function count_smileys($arr) {
+
+	$eyes = [':', ';'];
+	$nose = ['-', 'D'];
+	$smile = [')', 'D'];
 
   	foreach ($arr as $value) {
-		if (substr($value, 0, 1) === ':' | substr($value, 0, 1) === ';') {
+  		$firstChar = substr($value, 0, 1);
+		if (in_array($firstChar, $eyes)) {
 			
 		}
 	}
